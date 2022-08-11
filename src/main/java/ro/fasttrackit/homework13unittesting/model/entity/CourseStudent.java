@@ -1,0 +1,18 @@
+package ro.fasttrackit.homework13unittesting.model.entity;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class CourseStudent {
+  private String courseId;
+  private String studentId;
+
+  private float grade;
+}
